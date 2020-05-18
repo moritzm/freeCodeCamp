@@ -1,0 +1,30 @@
+#main {
+  max-width: 1000px;
+  margin: auto;
+  background: red;
+}
+
+#title {
+  text-align: center;
+}
+
+#img-div {
+  margin: auto;
+}
+
+figure {
+  border: 5px dashed black;
+  padding: 10px 10px 0 10px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+#img-caption {
+  padding: 10px;
+  text-align: center;
+}
