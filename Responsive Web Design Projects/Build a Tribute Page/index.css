@@ -12,15 +12,11 @@
 }
 
 figure {
-  border: 5px dashed black;
-  padding: 10px 10px 0 10px;
   margin: auto;
 }
 
 #image {
-  display: block;
-  max-width: 100%;
-  margin: auto;
+  width: 100%;
 }
 
 #img-caption {
