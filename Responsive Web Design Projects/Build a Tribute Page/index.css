@@ -17,6 +17,7 @@ figure {
 
 #image {
   width: 100%;
+  border-radius: 10px;
 }
 
 #img-caption {
@@ -42,8 +43,16 @@ section {
   background: white;
   padding: 2px 10px;
   margin: 10px 0;
+  border-radius: 10px;
 }
 
 body {
   background-color: beige;
+}
+
+#title {
+  background: white;
+  padding: 2px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
 }
