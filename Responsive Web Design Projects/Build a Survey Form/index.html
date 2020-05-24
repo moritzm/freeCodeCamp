@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>My Survey Form</title>
+    <title>Web Development Survey</title>
 
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -13,14 +13,14 @@
     <header>
       <h1 id="title">Starting Web Development!</h1>
       <p id="description">
-        This is a short survey about why you want to do web development.
+        This is a short survey about why you want to be a web developer.
       </p>
     </header>
 
     <main>
       <form id="survey-form">
         <div class="input-group">
-          <label id="name-label" for="name">Name</label>
+          <label id="name-label" for="name">Your name</label>
           <input
             id="name"
             name="name"
@@ -31,74 +31,183 @@
         </div>
 
         <div class="input-group">
-          <label id="email-label" for="email">Email</label>
+          <label id="email-label" for="email">Your Email address</label>
           <input
             id="email"
             name="email"
             type="email"
-            placeholder="Email"
+            placeholder="Email address"
             required
           />
         </div>
 
         <div class="input-group">
-          <label id="number-label" for="number">Number</label>
+          <label id="number-label" for="number">Your age</label>
           <input
             id="number"
-            name="number"
+            name="age"
             type="number"
             min="1"
-            max="15"
-            placeholder="Number"
+            max="100"
+            placeholder="Age"
           />
+        </div>
 
-          <div class="input-group">
-            <select name="level" id="dropdown">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
-            </select>
-          </div>
-
-          <div class="input-group">
-            <label>
-              <input id="male" type="radio" name="gender" value="male" />Male
-            </label>
-            <label
-              ><input
-                id="female"
-                type="radio"
-                name="gender"
-                value="female"
-              />Female</label
+        <div class="input-group">
+          <p>Please select your current role as a developer</p>
+          <select name="level" id="dropdown" required>
+            <option disabled selected value
+              >Choose current developer role</option
             >
-            <label
-              ><input
-                id="other"
-                type="radio"
-                name="gender"
-                value="other"
-              />Other</label
+            <option value=".net">.Net Developer</option>
+            <option value="javascript backend"
+              >JavaScript Backend Developer</option
             >
-          </div>
+            <option value="xamarin">Xamarin</option>
+            <option value="android">Android App Developer</option>
+            <option value="ios">iOS App Developer</option>
+          </select>
+        </div>
 
-          <div class="input-group">
-            <label><input type="checkbox" name="1" value="1" />1</label
-            ><label><input type="checkbox" name="2" value="2" />2</label
-            ><label><input type="checkbox" name="3" value="3" />3</label>
-            <label><input type="checkbox" name="4" value="4" />4</label
-            ><label><input type="checkbox" name="5" value="5" />5</label
-            ><label><input type="checkbox" name="6" value="6" />6</label>
-            <label><input type="checkbox" name="7" value="7" />7</label
-            ><label><input type="checkbox" name="8" value="8" />8</label
-            ><label><input type="checkbox" name="9" value="9" />9</label>
-          </div>
+        <div class="input-group">
+          <p>Please enter your gender</p>
+          <label>
+            <input id="male" type="radio" name="gender" value="male" />Male
+          </label>
+          <label
+            ><input
+              id="female"
+              type="radio"
+              name="gender"
+              value="female"
+            />Female</label
+          >
+          <label
+            ><input
+              id="other"
+              type="radio"
+              name="gender"
+              value="other"
+            />Other</label
+          >
+        </div>
 
-          <div class="input-group">
-            <textarea> </textarea>
-          </div>
+        <div class="input-group checkboxes-group">
+          <p>Please select your current knowledge of development skills</p>
+          <label><input type="checkbox" name="skills" value="c#" />C#</label
+          ><label><input type="checkbox" name="skills" value="wpf" />WPF</label
+          ><label
+            ><input
+              type="checkbox"
+              name="skills"
+              value="android"
+            />Android</label
+          >
+          <label><input type="checkbox" name="skills" value="4" />4</label
+          ><label><input type="checkbox" name="skills" value="5" />5</label
+          ><label><input type="checkbox" name="skills" value="6" />6</label>
+          <label><input type="checkbox" name="skills" value="7" />7</label
+          ><label><input type="checkbox" name="skills" value="8" />8</label
+          ><label><input type="checkbox" name="skills" value="9" />9</label>
+        </div>
 
+        <div class="input-group">
+          <label id="name-label" for="name">Your name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label id="email-label" for="email">Your Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email address"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label id="number-label" for="number">Your age</label>
+          <input
+            id="number"
+            name="age"
+            type="number"
+            min="1"
+            max="100"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="input-group">
+          <p>Please select your current role as a developer</p>
+          <select name="level" id="dropdown" required>
+            <option disabled selected value
+              >Choose current developer role</option
+            >
+            <option value=".net">.Net Developer</option>
+            <option value="javascript backend"
+              >JavaScript Backend Developer</option
+            >
+            <option value="xamarin">Xamarin</option>
+            <option value="android">Android App Developer</option>
+            <option value="ios">iOS App Developer</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <p>Please enter your gender</p>
+          <label>
+            <input id="male" type="radio" name="gender" value="male" />Male
+          </label>
+          <label
+            ><input
+              id="female"
+              type="radio"
+              name="gender"
+              value="female"
+            />Female</label
+          >
+          <label
+            ><input
+              id="other"
+              type="radio"
+              name="gender"
+              value="other"
+            />Other</label
+          >
+        </div>
+
+        <div class="input-group checkboxes-group">
+          <p>Please select your current knowledge of development skills</p>
+          <label><input type="checkbox" name="skills" value="c#" />C#</label
+          ><label><input type="checkbox" name="skills" value="wpf" />WPF</label
+          ><label
+            ><input
+              type="checkbox"
+              name="skills"
+              value="android"
+            />Android</label
+          >
+          <label><input type="checkbox" name="skills" value="4" />4</label
+          ><label><input type="checkbox" name="skills" value="5" />5</label
+          ><label><input type="checkbox" name="skills" value="6" />6</label>
+          <label><input type="checkbox" name="skills" value="7" />7</label
+          ><label><input type="checkbox" name="skills" value="8" />8</label
+          ><label><input type="checkbox" name="skills" value="9" />9</label>
+        </div>
+
+        <div class="input-group">
+          <textarea> </textarea>
+        </div>
+
+        <div class="input-group">
           <button id="submit" type="submit">Submit</button>
         </div>
       </form>

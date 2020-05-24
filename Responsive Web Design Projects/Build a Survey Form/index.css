@@ -1,4 +1,105 @@
+:root {
+  --default-margin-all-10px: 10px;
+  --margin-not-left-10px: 10px 10px 10px 0;
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-image: url(https://entwickler.de/wp-content/uploads/2016/01/webdev-trends-2016-900x450.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: aliceblue;
+}
+
+body {
+  background-color: rgba(5, 32, 56, 0.95);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+  margin: var(--default-margin-all-10px);
+}
+
+select {
+  width: 100%;
+  height: 2.5em;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+label {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='number'],
+[type='text'],
+[type='email'] {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+input[type='radio'] {
+  margin-right: 10px;
+}
+
+#title {
+  margin: var(--default-margin-all-10px);
+}
+
+#description {
+  margin: var(--default-margin-all-10px);
+}
+
+.input-group {
+  margin: var(--default-margin-all-10px);
+}
+
+.checkboxes-group label {
+  display: flex;
+  flex-direction: row;
+  margin: var(--margin-not-left-10px);
+}
+
+#checkboxes-group input {
+  margin-right: var(--default-margin-all-10px);
+  display: block;
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 100px;
+  padding: 5px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#submit {
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 10px;
+  height: 3em;
+  background-color: green;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }
