@@ -19,11 +19,14 @@ main {
 }
 
 #header {
-  margin: 1.5rem 0 5rem 0;
+  margin: 0 0 5rem 0;
   background-color: #306ffd;
   background-image: linear-gradient(60deg, #ffffff, #003ab7);
   color: #fff;
   text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .header-container {
@@ -69,6 +72,7 @@ main {
 #video-section {
   display: flex;
   justify-content: space-between;
+  margin-top: 200px;
 }
 
 #video-section article {
